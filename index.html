@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+     <div class="items">
+       <img class="logo" src="./images/logo.svg" alt="">
+       <div class="score-card">
+         <p>score</p>
+         <span id="score">
+           12
+         </span>
+       </div>
+     </div>
+     
+    </div>
+
+    <div class="choices">
+      <div value="0" data-id="rock" class="f1 red">
+       
+        <img  src="./images/icon-rock.svg" alt="">
+      </div>
+      <div value="1" data-id="scissors" class="f1 yellow">
+       <img  src="./images/icon-scissors.svg" alt="">
+     </div>
+     <div value="2" data-id="paper" class="f1 blue">
+      <img  src="./images/icon-paper.svg" alt="">
+     </div>
+     <img class="triangle" src="./images/bg-triangle.svg" alt="">
+    </div>
+    <a class="btn">
+      Rules
+    </a>
+
+  </div>
+  <div class="overlay">
+    <div class="pop-up">
+      <div class="rules-section">
+        <h1 class="rules-popup">Rules</h1>
+        <img class="close" src="./images/icon-close.svg" alt="">
+      </div>
+      <img class="ruleBook" src="./images/image-rules.svg" alt="">
+    </div>
+
+  </div>
+
+  <div class="main-game">
+    <div class="userpicked">
+      <h2>You picked</h2>
+      <div id="UserPick">
+        <div class="selected red">
+       
+          <img src="./images/icon-rock.svg" alt="">
+        </div>
+
+      </div>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+
+    </div>
+ 
+
+    <div class="decider">
+      <h1 id="result">You Won</h1>
+      <button type="submit" class="btn-play">
+        Play again
+      </button>
+    </div>
+
+  <div class="housepicked">
+    <h2>the House picked</h2>
+    <div id="HousePick">
+      <!-- <div class="selected red">
+     
+        <img src="./images/icon-rock.svg" alt="">
+      </div> -->
+
+    </div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="circle6"></div>
+    <div class="wait"></div>
+  </div>
+
+  </div>
+ 
+  <script src="./app.js"></script>
+</body>
+</html>
